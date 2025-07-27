@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8" />\
+  <meta name="viewport" content="width=device-width, initial-scale=1" />\
+  <title>Amazon Wallet</title>\
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />\
+  <link rel="stylesheet" href="style.css" />\
+</head>\
+<body>\
+  <!-- LOGIN PAGE -->\
+  <div class="login-screen" id="loginScreen">\
+    <div class="login-box">\
+      <h1>Amazon Wallet</h1>\
+      <p>Secure Banking Login</p>\
+      <input type="password" id="password" placeholder="Enter Password" />\
+      <button id="loginBtn">Login</button>\
+    </div>\
+  </div>\
+\
+  <!-- DASHBOARD -->\
+  <div class="dashboard" id="dashboard">\
+    <header class="topbar">\
+      <h2>Welcome, Mr Dessie</h2>\
+      <button class="logout-btn" id="logoutBtn">Logout</button>\
+    </header>\
+\
+    <!-- ACCOUNT SUMMARY -->\
+    <section class="summary">\
+      <div class="atm-card">\
+        <div class="card-top">\
+          <span class="chip"></span>\
+          <span class="brand">Amazon Wallet</span>\
+        </div>\
+        <div class="card-number">**** **** **** 4587</div>\
+        <div class="card-info">\
+          <div>\
+            <small>Card Holder</small>\
+            <strong>MR DESSIE</strong>\
+          </div>\
+          <div>\
+            <small>Expires</small>\
+            <strong>02/30</strong>\
+          </div>\
+        </div>\
+      </div>\
+      <div class="balance-box">\
+        <div class="balance-title">Available Balance</div>\
+        <p class="balance-amount" id="balanceAmount">147,340.62 EUR</p>\
+        <button class="toggle-balance" id="toggleBalanceBtn">Hide Balance</button>\
+      </div>\
+    </section>\
+\
+    <!-- ACTION BUTTONS -->\
+    <section class="actions">\
+      <button id="withdrawBtn">Withdraw</button>\
+      <button id="addPayeeBtn">Add Payee</button>\
+      <button id="depositBtn">Deposit</button>\
+      <button id="transferBtn">Transfer</button>\
+      <button id="payBillsBtn">Pay Bills</button>\
+      <button id="contactSupportBtn">Contact Support</button>\
+    </section>\
+\
+    <!-- TRANSACTION HISTORY -->\
+    <section class="transactions">\
+      <button class="toggle-history" id="toggleHistoryBtn">View Transaction History</button>\
+      <div class="history-list hidden" id="historyList">\
+        <p>\uc0\u10004  Successful Withdrawal from Amazon: <b>147,340.62 EUR</b></p>\
+      </div>\
+    </section>\
+\
+    <!-- FORMS AREA -->\
+    <section class="forms" id="forms"></section>\
+  </div>\
+\
+  <script src="script.js"></script>\
+</body>\
+</html>\
+}
